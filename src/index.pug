@@ -8,6 +8,76 @@ html(lang="en")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
     title |Beauty republic
   body
-    .wrapper
-      .maincontent
-        
+    .wrapper      
+      header.header
+        .logo
+          +image('logo.jpeg', 'logo__image', 'beauty-republic')
+        nav.nav
+          ul.nav__list 
+            - 
+              var menus= [ 
+                {
+                    name: 'About us',
+                    link: '#'
+                },{
+                    name: 'Shop',
+                    link: '#'
+                },{
+                    name: 'Services and Prices',
+                    link: '#'
+                },{
+                    name: 'Reviews',
+                    link: '#'
+                },{
+                    name: 'Blog',
+                    link: '#'
+                },{
+                    name: 'Contacts',
+                    link: '#'
+                }
+              ]
+            each menu in menus
+              li.nav__item #{menu.name}
+        adress.adress
+          a(
+            href="tel: 617-913-8083"
+          ).adress__link 617-913-8083
+        .cart
+          +icon('cart', 'cart__icon')
+        .login
+          +icon('login', 'login__icon')
+        button.btn BOOK NOW
+      .container
+        section.hero
+          .hero__text
+            h1.hero__text-head.section-head Welcome to Beaty Republic
+            p.hero__text-desc Individual approach to every client at a Reasonable price
+            button.btn more details
+          .hero__photo
+            .hero__photo-container
+              +image('hero.jpeg', 'hero__photo-image', 'beauty republic welcome')
+          .hero__photo-rect
+        section.services
+          h2.sevices__head.section-head Services
+          ul.services__list 
+            - 
+              var services= [ 
+                {
+                    head: 'Lash extensions',
+                    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora eius, quae quas dolorem vel facere expedita blanditiis fugiat odit facilis? Vitae commodi in placeat officiis repudiandae nemo minus similique atque!'                    
+                },{
+                    head: 'Facial Treatments',
+                    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora eius, quae quas dolorem vel facere expedita blanditiis fugiat odit facilis? Vitae commodi in placeat officiis repudiandae nemo minus similique atque!'
+                },{
+                    head: 'Brows',
+                    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora eius, quae quas dolorem vel facere expedita blanditiis fugiat odit facilis? Vitae commodi in placeat officiis repudiandae nemo minus similique atque!'
+                }
+              ]
+            each service in services
+              li.sevice__item
+                .sevice__desc
+                  h3.sevice__desc-head #{service.head}
+                  p.sevice__desc-text #{service.text}
+                  button.btn more details
+                .sevice__photo
+                  +image(`${service.head}.jpeg`, 'sevice__photo-img', '#{service.head}')
