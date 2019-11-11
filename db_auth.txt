@@ -1,0 +1,4 @@
+db wordpress-beauty
+db_user wordpress-beauty-admin
+db_pass Wordpress-Beauty001
+
