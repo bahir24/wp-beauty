@@ -22,9 +22,9 @@
 <body <?php body_class();?>>
 	<header id="masthead" class="site-header header">
 					<?php the_custom_logo();?>
-					<nav id="site-navigation" class="main-navigation"><?php wp_nav_menu(array('theme_location' => 'menu-1', 'menu_id' => 'primary-menu'));?></nav>
+					<nav id="site-navigation" class="main-navigation"><?php wp_nav_menu(array('theme_location' => 'menu-1', 'menu_id' => 'primary-menu', 'container' => 'none',));?></nav>
 					<div class="th-wrapper d-flex align-items-center">
-						<span>617-913-8083</span>
+						<a href="tel: 617-913-8083">617-913-8083</a>
 						<a href="#"><i class="fal fa-shopping-cart"></i></a>
 						<a href="#"><i class="fal fa-user"></i></a>
 						<a href="#"><span class="btn">BOOK NOW</span></a>

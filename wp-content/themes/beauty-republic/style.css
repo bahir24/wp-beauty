@@ -50,6 +50,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Gilda+Display&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
 
 
 html {
@@ -242,7 +243,7 @@ select,
 optgroup,
 textarea {
   color: #242222;
-  font-family: Montserrat, Gilda Display, Open Sans, Helvetica, sans-serif;
+  font-family: Montserrat, Gilda Display, Open Sans, Noto Sans, Helvetica, sans-serif;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5;
@@ -278,7 +279,7 @@ address {
 
 pre {
   background: #eee;
-  font-family: Montserrat, Gilda Display, Open Sans, Helvetica, sans-serif;
+  font-family: Montserrat, Gilda Display, Open Sans, Noto Sans, Helvetica, sans-serif;
   font-size: 15px;
   font-size: 0.9375rem;
   line-height: 1.6;
@@ -292,7 +293,7 @@ code,
 kbd,
 tt,
 var {
-  font-family: Montserrat, Gilda Display, Open Sans, Helvetica, sans-serif;
+  font-family: Montserrat, Gilda Display, Open Sans, Noto Sans, Helvetica, sans-serif;
   font-size: 15px;
   font-size: 0.9375rem;
 }
@@ -344,7 +345,7 @@ ol {
 }
 
 ul {
-  list-style: disc;
+  list-style: none;
 }
 
 ol {
@@ -474,9 +475,6 @@ textarea {
 /*--------------------------------------------------------------
 ## Links
 --------------------------------------------------------------*/
-a {
-  color: #1D1347;
-}
 
 a:visited {
   color: #1D1347;
@@ -503,30 +501,18 @@ a:active {
 .main-navigation {
   /* clear: both; */
   display: block;
+
   /* float: left; */
   /* width: 100%; */
 }
 
 .main-navigation ul {
-  display: none;
   list-style: none;
   margin: 0;
   padding-left: 0;
 }
 
-.main-navigation ul ul {
-  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-  float: left;
-  position: absolute;
-  top: 100%;
-  left: -999em;
-  z-index: 99999;
-}
 
-.main-navigation ul ul ul {
-  left: -999em;
-  top: 0;
-}
 
 .main-navigation ul ul li:hover>ul,
 .main-navigation ul ul li.focus>ul {
@@ -563,9 +549,6 @@ a:active {
     display: none;
   }
 
-  .main-navigation ul {
-    display: block;
-  }
 }
 
 .site-main .comment-navigation,
@@ -849,24 +832,28 @@ object {
 
 /* ######################################################### */
 
-.header {
+.header,
+.site-footer {
   height: 10vh;
-  width: 100%;
   display: flex;
   align-items: center;
-  max-width: 107.8125rem;
-  width: 90%;
+  width: 100%;
+  padding: 0 5%;
   margin: 0 auto
-}
-
-.th-wrapper>span,
-a {
-  white-space: nowrap;
-
 }
 
 .th-wrapper>a {
   margin-left: 2vw;
+  text-decoration: none;
+  white-space: nowrap;
+  color: #423191;
+}
+
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 
@@ -881,29 +868,98 @@ a {
 
 .menu-item>a {
   font-size: 20px;
+  color: #423191;
+  position: relative;
+  line-height: 2em;
+}
+
+.menu-item>a:hover {
+  text-decoration: underline;
+}
+
+.menu-item>a::before {
+  content: url(./images/icons/menu-flower.svg);
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  top: -40%;
+  transition: opacity .2s;
+}
+
+
+.menu-item>a:hover:before {
+  opacity: 1;
+}
+
+
+.fal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #423191;
+  width: 2vw;
+  height: 2vw;
+  opacity: .7;
+  transition: opacity .3s;
+}
+
+.fal:hover {
+  opacity: 1;
 }
 
 .fa-user {
-  border-radius: 50%;
-  border: 1px solid #423191;
-  padding: 20%;
+  display: flex;
+  width: 2vw;
+  height: 2vw;
 }
 
-.fa-user:hover {
-  border: 1px solid #FA4742;
+.fa-user:before {
+  border: 1px solid #423191;
+  padding: 4px;
+  border-radius: 50%;
+  font-size: 1.4em;
 }
+
+.fa-user:hover::before {
+  opacity: 1;
+}
+
+.fal::before {
+  color: #423191;
+
+}
+
+/* .fal:hover::before {
+  color: #FA4742;
+
+} */
+
+.fa-shopping-cart {
+  font-size: 1.5em;
+}
+
 
 .btn {
   display: block;
-  max-width: 10vw;
+  min-width: 10vw;
+  max-width: 12vw;
   height: 2.7rem;
   font-size: 1.25rem;
   text-transform: uppercase;
   color: #423191;
-  background: #fff;
+  background: rgb(66, 49, 145, 0);
+  transition: background 0.5s;
   border: 1px solid #423191;
   cursor: pointer;
 }
+
+.btn:hover {
+  background: rgb(66, 49, 145, 1);
+  color: #fff;
+}
+
 
 .container {
   margin: 0 auto;
@@ -967,7 +1023,7 @@ a {
 }
 
 .down__arrow {
-  width: 2px;
+  width: 1px;
   height: 60px;
   background: #423191;
   position: relative;
@@ -982,20 +1038,20 @@ a {
   display: block;
   position: absolute;
   bottom: 0;
-  width: 2px;
+  width: 1px;
   height: 25px;
-  bottom: -6px;
+  bottom: -5px;
   background: #423191;
 
 }
 
 .down__arrow:before {
   transform: rotate(45deg);
-  left: 8px;
+  left: 9px;
 }
 
 .down__arrow:after {
-  right: 8px;
+  right: 9px;
   transform: rotate(-45deg);
 
 }
@@ -1054,7 +1110,6 @@ a {
 }
 
 .sevice__desc {
-  padding-right: 6vw;
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -1077,6 +1132,7 @@ a {
 }
 
 .sevice__desc-text {
+  padding-right: 6vw;
   font-family: Open Sans;
   font-weight: 300;
   font-size: 1.125rem;
@@ -1095,4 +1151,116 @@ a {
   height: 32vw;
   -o-object-fit: cover;
   object-fit: cover
+}
+
+.site-footer {
+  display: flex;
+  flex-direction: row;
+  height: 7vh;
+  background: #F4F2F0;
+}
+
+.footer-about-company {
+  font-family: Noto Sans;
+  font-size: 1.125em;
+  color: rgba(115, 115, 115, .7) !important;
+  margin-right: auto;
+  transition: color 0.5s;
+  cursor: pointer;
+}
+
+.footer-about-company:hover {
+  color: rgba(115, 115, 115, 1) !important;
+}
+
+.socials-list {
+  display: flex;
+}
+
+.socials-item {
+  position: relative;
+  margin-right: 1vw;
+  width: 25px;
+  height: 25px;
+}
+
+.socials-item:last-child {
+  margin-right: 0;
+}
+
+.socials-item-link {
+  position: absolute;
+  display: block;
+  font-size: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  z-index: 10;
+
+}
+
+.socials-item-link:hover~.socials-item-icon {
+  opacity: 1;
+}
+
+.socials-item-icon {
+  width: 100%;
+  height: 100%;
+  fill: #423191;
+  opacity: .8;
+  transition: opacity 0.3s;
+  z-index: 1;
+}
+
+.btn-left,
+.btn-right {
+  width: 3vw;
+  height: 3vw;
+  border: 1px solid #423191;
+  padding: 0;
+  position: relative;
+  background: rgba(66, 49, 145, 0);
+  transition: background .5s;
+  cursor: pointer;
+}
+
+.btn-left:hover,
+.btn-right:hover {
+  background: rgba(66, 49, 145, 1);
+}
+
+.btn-left {
+  margin-right: 10px;
+}
+
+.btn-left::before,
+.btn-right::before {
+  content: '';
+  display: block;
+  width: 1vw;
+  height: 1vw;
+  border: 1px solid #423191;
+  position: absolute;
+  transform: rotate(45deg);
+
+  top: 33%;
+  /* transform: translateY(-50%); */
+}
+
+
+.btn-left::before {
+  left: 40%;
+  border-top: transparent;
+  border-right: transparent;
+}
+
+.btn-right::before {
+  left: 20%;
+  border-bottom: transparent;
+  border-left: transparent;
+}
+
+.btn-left:hover::before,
+.btn-right:hover::before {
+  border-color: #fff;
 }

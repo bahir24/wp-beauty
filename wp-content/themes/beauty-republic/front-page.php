@@ -72,7 +72,11 @@ get_header();
             <div class="sevice__desc">
               <h3 class="sevice__desc-head">Violetta is a licensed esthetician with
 a passion for beauty industry. </h3>
-              <p class="sevice__desc-text">She is a multi-certified lash artist and skin care specialist. She will pick the best services depending on a client’s needs. Her goal is to make sure that her clients are fully satisfied with the services they get!</p><button class="btn">more details</button>
+              <p class="sevice__desc-text">She is a multi-certified lash artist and skin care specialist. She will pick the best services depending on a client’s needs. Her goal is to make sure that her clients are fully satisfied with the services they get!</p>
+              <div class="service-buttons">
+                <button class="btn-left"></button>
+                <button class="btn-right"></button>
+              </div>
             </div>
             <div class="sevice__photo"><img class="sevice__photo-img" src="./wp-content/themes/beauty-republic/images/dec1c81b46223c9ea7229629591d7f07.jpeg"
                 alt="#{service.head}"></div>
