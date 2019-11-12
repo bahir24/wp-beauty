@@ -1,0 +1,684 @@
+********************************************************************************
+* DUPLICATOR-PRO: Install-Log
+* STEP-1 START @ 11:13:28
+* VERSION: 1.3.22
+* NOTICE: Do NOT post to public sites or forums!!
+********************************************************************************
+PACKAGE INFO________ CURRENT SERVER                         |ORIGINAL SERVER
+PHP VERSION_________: 7.0.25                                |7.1.21
+OS__________________: FreeBSD                               |Linux
+CREATED_____________: 2019-10-01 07:37:21
+WP VERSION__________: 5.2.3
+DUP VERSION_________: 1.3.22
+DB__________________: 5.6.27
+DB TABLES___________: 55
+DB ROWS_____________: 491
+DB FILE SIZE________: 3.61MB
+********************************************************************************
+SERVER INFO
+PHP_________________: 7.1.21 | SAPI: cgi-fcgi
+PHP MEMORY__________: 4294967296 | SUHOSIN: disabled
+SERVER______________: Apache
+DOC ROOT____________: "/home/httpd/vhosts/onesait.ru/subdomains/br/httpdocs"
+DOC ROOT 755________: true
+LOG FILE 644________: true
+REQUEST URL_________: "https://br.onesait.ru/dup-installer/main.installer.php"
+********************************************************************************
+USER INPUTS
+ARCHIVE ENGINE______: "shellexec_unzip"
+SET DIR PERMS_______: 1
+DIR PERMS VALUE_____: 1363
+SET FILE PERMS______: 1
+FILE PERMS VALUE____: 1204
+SAFE MODE___________: "0"
+LOGGING_____________: "1"
+CONFIG MODE_________: "NEW"
+FILE TIME___________: "current"
+********************************************************************************
+
+
+--------------------------------------
+ARCHIVE SETUP
+--------------------------------------
+NAME________________: "20191001_empty_b40f75b6bfbc92e15930_20191001073721_archive.zip"
+SIZE________________: 53.53MB
+
+PRE-EXTRACT-CHECKS
+- PASS: Apache '.htaccess' not found - no backup needed.
+- PASS: Microsoft IIS 'web.config' not found - no backup needed.
+- PASS: WordFence '.user.ini' not found - no backup needed.
+
+
+START ZIP FILE EXTRACTION SHELLEXEC >>> 
+>>> Starting Shell-Exec Unzip:
+Command: unzip -o -qq '/home/httpd/vhosts/onesait.ru/subdomains/br/httpdocs/20191001_empty_b40f75b6bfbc92e15930_20191001073721_archive.zip' -d '/home/httpd/vhosts/onesait.ru/subdomains/br/httpdocs' 2>&1
+<<< Shell-Exec Unzip Complete.
+--------------------------------------
+POST-EXTACT-CHECKS
+--------------------------------------
+PERMISSION UPDATES:
+    -DIRS:  '755'
+    -FILES: '644'
+
+STEP-1 COMPLETE @ 11:13:32 - RUNTIME: 3.9820 sec.
+
+
+
+********************************************************************************
+* DUPLICATOR-LITE INSTALL-LOG
+* STEP-2 START @ 11:15:35
+* NOTICE: Do NOT post to public sites or forums!!
+********************************************************************************
+USER INPUTS
+VIEW MODE___________: "basic"
+DB ACTION___________: "empty"
+DB HOST_____________: "**OBSCURED**"
+DB NAME_____________: "**OBSCURED**"
+DB PASS_____________: "**OBSCURED**"
+DB PORT_____________: "**OBSCURED**"
+NON-BREAKING SPACES_: false
+MYSQL MODE__________: "DEFAULT"
+MYSQL MODE OPTS_____: ""
+CHARSET_____________: "utf8"
+COLLATE_____________: "utf8_general_ci"
+COLLATE FB__________: false
+VIEW CREATION_______: true
+STORED PROCEDURE____: true
+********************************************************************************
+
+--------------------------------------
+DATABASE-ENVIRONMENT
+--------------------------------------
+MYSQL VERSION:	This Server: 5.7.22 -- Build Server: 5.6.27
+FILE SIZE:	dup-database__b40f75b-01073721.sql (546.91KB)
+TIMEOUT:	5000
+MAXPACK:	536870912
+SQLMODE:	NOT_SET
+NEW SQL FILE:	[/home/httpd/vhosts/onesait.ru/subdomains/br/httpdocs/dup-installer/dup-installer-data__b40f75b-01073721.sql]
+COLLATE FB:	Off
+--------------------------------------
+DATABASE RESULTS
+--------------------------------------
+DB VIEWS:	enabled
+DB PROCEDURES:	enabled
+ERRORS FOUND:	0
+DROPPED TABLES:	57
+RENAMED TABLES:	0
+QUERIES RAN:	472
+
+cerber_acl: (1)
+cerber_blocks: (0)
+cerber_countries: (0)
+cerber_lab: (0)
+cerber_lab_ip: (0)
+cerber_lab_net: (0)
+cerber_log: (0)
+cerber_qmem: (0)
+cerber_traffic: (1)
+wp_cerber_files: (0)
+wp_cerber_sets: (4)
+wp_cerber_uss: (1)
+wp_commentmeta: (0)
+wp_comments: (5)
+wp_duplicator_packages: (0)
+wp_failed_jobs: (0)
+wp_links: (0)
+wp_mailchimp_carts: (0)
+wp_options: (334)
+wp_postmeta: (26)
+wp_posts: (14)
+wp_queue: (0)
+wp_rio_process_queue: (0)
+wp_term_relationships: (3)
+wp_term_taxonomy: (16)
+wp_termmeta: (0)
+wp_terms: (16)
+wp_usermeta: (21)
+wp_users: (1)
+wp_wc_admin_note_actions: (2)
+wp_wc_admin_notes: (2)
+wp_wc_customer_lookup: (0)
+wp_wc_download_log: (0)
+wp_wc_order_coupon_lookup: (0)
+wp_wc_order_product_lookup: (0)
+wp_wc_order_stats: (0)
+wp_wc_order_tax_lookup: (0)
+wp_wc_product_meta_lookup: (0)
+wp_wc_tax_rate_classes: (2)
+wp_wc_webhooks: (0)
+wp_woocommerce_api_keys: (0)
+wp_woocommerce_attribute_taxonomies: (0)
+wp_woocommerce_downloadable_product_permissions: (0)
+wp_woocommerce_log: (0)
+wp_woocommerce_order_itemmeta: (0)
+wp_woocommerce_order_items: (0)
+wp_woocommerce_payment_tokenmeta: (0)
+wp_woocommerce_payment_tokens: (0)
+wp_woocommerce_sessions: (1)
+wp_woocommerce_shipping_zone_locations: (1)
+wp_woocommerce_shipping_zone_methods: (2)
+wp_woocommerce_shipping_zones: (1)
+wp_woocommerce_tax_rate_locations: (0)
+wp_woocommerce_tax_rates: (0)
+wp_wpfm_backup: (0)
+Removed '50' cache/transient rows
+
+INSERT DATA RUNTIME: 1.0947 sec.
+STEP-2 COMPLETE @ 11:15:36 - RUNTIME: 1.1042 sec.
+
+====================================
+SET SEARCH AND REPLACE LIST
+====================================
+
+
+********************************************************************************
+DUPLICATOR PRO INSTALL-LOG
+STEP-3 START @ 11:15:52
+NOTICE: Do NOT post to public sites or forums
+********************************************************************************
+CHARSET SERVER:	"utf8"
+CHARSET CLIENT:	"utf8"
+********************************************************************************
+OPTIONS:
+blogname______________: "Beauty Republic"
+postguid______________: false
+fullsearch____________: false
+path_old______________: "/sata1/home/users/koyot/www/moto.koyot.info/"
+path_new______________: "/home/httpd/vhosts/onesait.ru/subdomains/br/httpdocs/"
+siteurl_______________: "https://br.onesait.ru"
+url_old_______________: "http://moto.koyot.info"
+url_new_______________: "https://br.onesait.ru"
+maxSerializeStrlen____: 4000000
+replaceMail___________: false
+dbhost________________: "a52308.mysql.mchost.ru"
+dbuser________________: "a52308_br"
+dbname________________: "a52308_br"
+dbcharset_____________: "utf8"
+dbcollate_____________: "utf8_general_ci"
+wp_username___________: ""
+wp_mail_______________: ""
+wp_nickname___________: ""
+wp_first_name_________: ""
+wp_last_name__________: ""
+ssl_admin_____________: false
+cache_wp______________: false
+cache_path____________: false
+exe_safe_mode_________: false
+config_mode___________: "NEW"
+********************************************************************************
+
+
+====================================
+RUN SEARCH AND REPLACE
+====================================
+
+EVALUATE TABLE: "cerber_acl"______________________________________[ROWS:     1][PG:   1][SCAN:text columns]
+	SEARCH  1:"/sata1/home/users/koyot/www/moto.koyot.info/" ====> "/home/httpd/vhosts/onesait.ru/subdomains/br/httpdocs/"
+	SEARCH  2:"\/sata1\/home\/users\/koyot\/www\/moto.koyot.info\/" => "\/home\/httpd\/vhosts\/onesait.ru\/subdomains\/br\/httpdocs\/"
+	SEARCH  3:"%2Fsata1%2Fhome%2Fusers%2Fkoyot%2Fwww%2Fmoto.koyot.info%2F" => "%2Fhome%2Fhttpd%2Fvhosts%2Fonesait.ru%2Fsubdomains%2Fbr%2Fhttpdocs%2F"
+	SEARCH  4:"\sata1\home\users\koyot\www\moto.koyot.info" =====> "/home/httpd/vhosts/onesait.ru/subdomains/br/httpdocs"
+	SEARCH  5:"\\sata1\\home\\users\\koyot\\www\\moto.koyot.info" => "\/home\/httpd\/vhosts\/onesait.ru\/subdomains\/br\/httpdocs"
+	SEARCH  6:"%5Csata1%5Chome%5Cusers%5Ckoyot%5Cwww%5Cmoto.koyot.info" => "%2Fhome%2Fhttpd%2Fvhosts%2Fonesait.ru%2Fsubdomains%2Fbr%2Fhttpdocs"
+	SEARCH  7:"//moto.koyot.info" ===============================> "//br.onesait.ru"
+	SEARCH  8:"\/\/moto.koyot.info" =============================> "\/\/br.onesait.ru"
+	SEARCH  9:"%2F%2Fmoto.koyot.info" ===========================> "%2F%2Fbr.onesait.ru"
+	SEARCH 10:"http://br.onesait.ru" ============================> "https://br.onesait.ru"
+	SEARCH 11:"http:\/\/br.onesait.ru" ==========================> "https:\/\/br.onesait.ru"
+	SEARCH 12:"http%3A%2F%2Fbr.onesait.ru" ======================> "https%3A%2F%2Fbr.onesait.ru"
+
+EVALUATE TABLE: "cerber_blocks"___________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "cerber_countries"________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "cerber_lab"______________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "cerber_lab_ip"___________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "cerber_lab_net"__________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "cerber_log"______________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "cerber_qmem"_____________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "cerber_traffic"__________________________________[ROWS:     1][PG:   1][SCAN:text columns]
+	SEARCH  1:"/sata1/home/users/koyot/www/moto.koyot.info/" ====> "/home/httpd/vhosts/onesait.ru/subdomains/br/httpdocs/"
+	SEARCH  2:"\/sata1\/home\/users\/koyot\/www\/moto.koyot.info\/" => "\/home\/httpd\/vhosts\/onesait.ru\/subdomains\/br\/httpdocs\/"
+	SEARCH  3:"%2Fsata1%2Fhome%2Fusers%2Fkoyot%2Fwww%2Fmoto.koyot.info%2F" => "%2Fhome%2Fhttpd%2Fvhosts%2Fonesait.ru%2Fsubdomains%2Fbr%2Fhttpdocs%2F"
+	SEARCH  4:"\sata1\home\users\koyot\www\moto.koyot.info" =====> "/home/httpd/vhosts/onesait.ru/subdomains/br/httpdocs"
+	SEARCH  5:"\\sata1\\home\\users\\koyot\\www\\moto.koyot.info" => "\/home\/httpd\/vhosts\/onesait.ru\/subdomains\/br\/httpdocs"
+	SEARCH  6:"%5Csata1%5Chome%5Cusers%5Ckoyot%5Cwww%5Cmoto.koyot.info" => "%2Fhome%2Fhttpd%2Fvhosts%2Fonesait.ru%2Fsubdomains%2Fbr%2Fhttpdocs"
+	SEARCH  7:"//moto.koyot.info" ===============================> "//br.onesait.ru"
+	SEARCH  8:"\/\/moto.koyot.info" =============================> "\/\/br.onesait.ru"
+	SEARCH  9:"%2F%2Fmoto.koyot.info" ===========================> "%2F%2Fbr.onesait.ru"
+	SEARCH 10:"http://br.onesait.ru" ============================> "https://br.onesait.ru"
+	SEARCH 11:"http:\/\/br.onesait.ru" ==========================> "https:\/\/br.onesait.ru"
+	SEARCH 12:"http%3A%2F%2Fbr.onesait.ru" ======================> "https%3A%2F%2Fbr.onesait.ru"
+
+EVALUATE TABLE: "wp_cerber_files"_________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_cerber_sets"__________________________________[ROWS:     4][PG:   1][SCAN:text columns]
+	SEARCH  1:"/sata1/home/users/koyot/www/moto.koyot.info/" ====> "/home/httpd/vhosts/onesait.ru/subdomains/br/httpdocs/"
+	SEARCH  2:"\/sata1\/home\/users\/koyot\/www\/moto.koyot.info\/" => "\/home\/httpd\/vhosts\/onesait.ru\/subdomains\/br\/httpdocs\/"
+	SEARCH  3:"%2Fsata1%2Fhome%2Fusers%2Fkoyot%2Fwww%2Fmoto.koyot.info%2F" => "%2Fhome%2Fhttpd%2Fvhosts%2Fonesait.ru%2Fsubdomains%2Fbr%2Fhttpdocs%2F"
+	SEARCH  4:"\sata1\home\users\koyot\www\moto.koyot.info" =====> "/home/httpd/vhosts/onesait.ru/subdomains/br/httpdocs"
+	SEARCH  5:"\\sata1\\home\\users\\koyot\\www\\moto.koyot.info" => "\/home\/httpd\/vhosts\/onesait.ru\/subdomains\/br\/httpdocs"
+	SEARCH  6:"%5Csata1%5Chome%5Cusers%5Ckoyot%5Cwww%5Cmoto.koyot.info" => "%2Fhome%2Fhttpd%2Fvhosts%2Fonesait.ru%2Fsubdomains%2Fbr%2Fhttpdocs"
+	SEARCH  7:"//moto.koyot.info" ===============================> "//br.onesait.ru"
+	SEARCH  8:"\/\/moto.koyot.info" =============================> "\/\/br.onesait.ru"
+	SEARCH  9:"%2F%2Fmoto.koyot.info" ===========================> "%2F%2Fbr.onesait.ru"
+	SEARCH 10:"http://br.onesait.ru" ============================> "https://br.onesait.ru"
+	SEARCH 11:"http:\/\/br.onesait.ru" ==========================> "https:\/\/br.onesait.ru"
+	SEARCH 12:"http%3A%2F%2Fbr.onesait.ru" ======================> "https%3A%2F%2Fbr.onesait.ru"
+
+EVALUATE TABLE: "wp_cerber_uss"___________________________________[ROWS:     1][PG:   1][SCAN:text columns]
+	SEARCH  1:"/sata1/home/users/koyot/www/moto.koyot.info/" ====> "/home/httpd/vhosts/onesait.ru/subdomains/br/httpdocs/"
+	SEARCH  2:"\/sata1\/home\/users\/koyot\/www\/moto.koyot.info\/" => "\/home\/httpd\/vhosts\/onesait.ru\/subdomains\/br\/httpdocs\/"
+	SEARCH  3:"%2Fsata1%2Fhome%2Fusers%2Fkoyot%2Fwww%2Fmoto.koyot.info%2F" => "%2Fhome%2Fhttpd%2Fvhosts%2Fonesait.ru%2Fsubdomains%2Fbr%2Fhttpdocs%2F"
+	SEARCH  4:"\sata1\home\users\koyot\www\moto.koyot.info" =====> "/home/httpd/vhosts/onesait.ru/subdomains/br/httpdocs"
+	SEARCH  5:"\\sata1\\home\\users\\koyot\\www\\moto.koyot.info" => "\/home\/httpd\/vhosts\/onesait.ru\/subdomains\/br\/httpdocs"
+	SEARCH  6:"%5Csata1%5Chome%5Cusers%5Ckoyot%5Cwww%5Cmoto.koyot.info" => "%2Fhome%2Fhttpd%2Fvhosts%2Fonesait.ru%2Fsubdomains%2Fbr%2Fhttpdocs"
+	SEARCH  7:"//moto.koyot.info" ===============================> "//br.onesait.ru"
+	SEARCH  8:"\/\/moto.koyot.info" =============================> "\/\/br.onesait.ru"
+	SEARCH  9:"%2F%2Fmoto.koyot.info" ===========================> "%2F%2Fbr.onesait.ru"
+	SEARCH 10:"http://br.onesait.ru" ============================> "https://br.onesait.ru"
+	SEARCH 11:"http:\/\/br.onesait.ru" ==========================> "https:\/\/br.onesait.ru"
+	SEARCH 12:"http%3A%2F%2Fbr.onesait.ru" ======================> "https%3A%2F%2Fbr.onesait.ru"
+
+EVALUATE TABLE: "wp_commentmeta"__________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_comments"_____________________________________[ROWS:     5][PG:   1][SCAN:text columns]
+	SEARCH  1:"/sata1/home/users/koyot/www/moto.koyot.info/" ====> "/home/httpd/vhosts/onesait.ru/subdomains/br/httpdocs/"
+	SEARCH  2:"\/sata1\/home\/users\/koyot\/www\/moto.koyot.info\/" => "\/home\/httpd\/vhosts\/onesait.ru\/subdomains\/br\/httpdocs\/"
+	SEARCH  3:"%2Fsata1%2Fhome%2Fusers%2Fkoyot%2Fwww%2Fmoto.koyot.info%2F" => "%2Fhome%2Fhttpd%2Fvhosts%2Fonesait.ru%2Fsubdomains%2Fbr%2Fhttpdocs%2F"
+	SEARCH  4:"\sata1\home\users\koyot\www\moto.koyot.info" =====> "/home/httpd/vhosts/onesait.ru/subdomains/br/httpdocs"
+	SEARCH  5:"\\sata1\\home\\users\\koyot\\www\\moto.koyot.info" => "\/home\/httpd\/vhosts\/onesait.ru\/subdomains\/br\/httpdocs"
+	SEARCH  6:"%5Csata1%5Chome%5Cusers%5Ckoyot%5Cwww%5Cmoto.koyot.info" => "%2Fhome%2Fhttpd%2Fvhosts%2Fonesait.ru%2Fsubdomains%2Fbr%2Fhttpdocs"
+	SEARCH  7:"//moto.koyot.info" ===============================> "//br.onesait.ru"
+	SEARCH  8:"\/\/moto.koyot.info" =============================> "\/\/br.onesait.ru"
+	SEARCH  9:"%2F%2Fmoto.koyot.info" ===========================> "%2F%2Fbr.onesait.ru"
+	SEARCH 10:"http://br.onesait.ru" ============================> "https://br.onesait.ru"
+	SEARCH 11:"http:\/\/br.onesait.ru" ==========================> "https:\/\/br.onesait.ru"
+	SEARCH 12:"http%3A%2F%2Fbr.onesait.ru" ======================> "https%3A%2F%2Fbr.onesait.ru"
+
+EVALUATE TABLE: "wp_duplicator_packages"__________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_failed_jobs"__________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_links"________________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_mailchimp_carts"______________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_options"______________________________________[ROWS:   334][PG:   1][SCAN:text columns]
+	SEARCH  1:"/sata1/home/users/koyot/www/moto.koyot.info/" ====> "/home/httpd/vhosts/onesait.ru/subdomains/br/httpdocs/"
+	SEARCH  2:"\/sata1\/home\/users\/koyot\/www\/moto.koyot.info\/" => "\/home\/httpd\/vhosts\/onesait.ru\/subdomains\/br\/httpdocs\/"
+	SEARCH  3:"%2Fsata1%2Fhome%2Fusers%2Fkoyot%2Fwww%2Fmoto.koyot.info%2F" => "%2Fhome%2Fhttpd%2Fvhosts%2Fonesait.ru%2Fsubdomains%2Fbr%2Fhttpdocs%2F"
+	SEARCH  4:"\sata1\home\users\koyot\www\moto.koyot.info" =====> "/home/httpd/vhosts/onesait.ru/subdomains/br/httpdocs"
+	SEARCH  5:"\\sata1\\home\\users\\koyot\\www\\moto.koyot.info" => "\/home\/httpd\/vhosts\/onesait.ru\/subdomains\/br\/httpdocs"
+	SEARCH  6:"%5Csata1%5Chome%5Cusers%5Ckoyot%5Cwww%5Cmoto.koyot.info" => "%2Fhome%2Fhttpd%2Fvhosts%2Fonesait.ru%2Fsubdomains%2Fbr%2Fhttpdocs"
+	SEARCH  7:"//moto.koyot.info" ===============================> "//br.onesait.ru"
+	SEARCH  8:"\/\/moto.koyot.info" =============================> "\/\/br.onesait.ru"
+	SEARCH  9:"%2F%2Fmoto.koyot.info" ===========================> "%2F%2Fbr.onesait.ru"
+	SEARCH 10:"http://br.onesait.ru" ============================> "https://br.onesait.ru"
+	SEARCH 11:"http:\/\/br.onesait.ru" ==========================> "https:\/\/br.onesait.ru"
+	SEARCH 12:"http%3A%2F%2Fbr.onesait.ru" ======================> "https%3A%2F%2Fbr.onesait.ru"
+
+EVALUATE TABLE: "wp_postmeta"_____________________________________[ROWS:    26][PG:   1][SCAN:text columns]
+	SEARCH  1:"/sata1/home/users/koyot/www/moto.koyot.info/" ====> "/home/httpd/vhosts/onesait.ru/subdomains/br/httpdocs/"
+	SEARCH  2:"\/sata1\/home\/users\/koyot\/www\/moto.koyot.info\/" => "\/home\/httpd\/vhosts\/onesait.ru\/subdomains\/br\/httpdocs\/"
+	SEARCH  3:"%2Fsata1%2Fhome%2Fusers%2Fkoyot%2Fwww%2Fmoto.koyot.info%2F" => "%2Fhome%2Fhttpd%2Fvhosts%2Fonesait.ru%2Fsubdomains%2Fbr%2Fhttpdocs%2F"
+	SEARCH  4:"\sata1\home\users\koyot\www\moto.koyot.info" =====> "/home/httpd/vhosts/onesait.ru/subdomains/br/httpdocs"
+	SEARCH  5:"\\sata1\\home\\users\\koyot\\www\\moto.koyot.info" => "\/home\/httpd\/vhosts\/onesait.ru\/subdomains\/br\/httpdocs"
+	SEARCH  6:"%5Csata1%5Chome%5Cusers%5Ckoyot%5Cwww%5Cmoto.koyot.info" => "%2Fhome%2Fhttpd%2Fvhosts%2Fonesait.ru%2Fsubdomains%2Fbr%2Fhttpdocs"
+	SEARCH  7:"//moto.koyot.info" ===============================> "//br.onesait.ru"
+	SEARCH  8:"\/\/moto.koyot.info" =============================> "\/\/br.onesait.ru"
+	SEARCH  9:"%2F%2Fmoto.koyot.info" ===========================> "%2F%2Fbr.onesait.ru"
+	SEARCH 10:"http://br.onesait.ru" ============================> "https://br.onesait.ru"
+	SEARCH 11:"http:\/\/br.onesait.ru" ==========================> "https:\/\/br.onesait.ru"
+	SEARCH 12:"http%3A%2F%2Fbr.onesait.ru" ======================> "https%3A%2F%2Fbr.onesait.ru"
+
+EVALUATE TABLE: "wp_posts"________________________________________[ROWS:    14][PG:   1][SCAN:text columns]
+	SEARCH  1:"/sata1/home/users/koyot/www/moto.koyot.info/" ====> "/home/httpd/vhosts/onesait.ru/subdomains/br/httpdocs/"
+	SEARCH  2:"\/sata1\/home\/users\/koyot\/www\/moto.koyot.info\/" => "\/home\/httpd\/vhosts\/onesait.ru\/subdomains\/br\/httpdocs\/"
+	SEARCH  3:"%2Fsata1%2Fhome%2Fusers%2Fkoyot%2Fwww%2Fmoto.koyot.info%2F" => "%2Fhome%2Fhttpd%2Fvhosts%2Fonesait.ru%2Fsubdomains%2Fbr%2Fhttpdocs%2F"
+	SEARCH  4:"\sata1\home\users\koyot\www\moto.koyot.info" =====> "/home/httpd/vhosts/onesait.ru/subdomains/br/httpdocs"
+	SEARCH  5:"\\sata1\\home\\users\\koyot\\www\\moto.koyot.info" => "\/home\/httpd\/vhosts\/onesait.ru\/subdomains\/br\/httpdocs"
+	SEARCH  6:"%5Csata1%5Chome%5Cusers%5Ckoyot%5Cwww%5Cmoto.koyot.info" => "%2Fhome%2Fhttpd%2Fvhosts%2Fonesait.ru%2Fsubdomains%2Fbr%2Fhttpdocs"
+	SEARCH  7:"//moto.koyot.info" ===============================> "//br.onesait.ru"
+	SEARCH  8:"\/\/moto.koyot.info" =============================> "\/\/br.onesait.ru"
+	SEARCH  9:"%2F%2Fmoto.koyot.info" ===========================> "%2F%2Fbr.onesait.ru"
+	SEARCH 10:"http://br.onesait.ru" ============================> "https://br.onesait.ru"
+	SEARCH 11:"http:\/\/br.onesait.ru" ==========================> "https:\/\/br.onesait.ru"
+	SEARCH 12:"http%3A%2F%2Fbr.onesait.ru" ======================> "https%3A%2F%2Fbr.onesait.ru"
+
+EVALUATE TABLE: "wp_queue"________________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_rio_process_queue"____________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_term_relationships"___________________________[ROWS:     3][PG:   1][SCAN:text columns]
+	SEARCH  1:"/sata1/home/users/koyot/www/moto.koyot.info/" ====> "/home/httpd/vhosts/onesait.ru/subdomains/br/httpdocs/"
+	SEARCH  2:"\/sata1\/home\/users\/koyot\/www\/moto.koyot.info\/" => "\/home\/httpd\/vhosts\/onesait.ru\/subdomains\/br\/httpdocs\/"
+	SEARCH  3:"%2Fsata1%2Fhome%2Fusers%2Fkoyot%2Fwww%2Fmoto.koyot.info%2F" => "%2Fhome%2Fhttpd%2Fvhosts%2Fonesait.ru%2Fsubdomains%2Fbr%2Fhttpdocs%2F"
+	SEARCH  4:"\sata1\home\users\koyot\www\moto.koyot.info" =====> "/home/httpd/vhosts/onesait.ru/subdomains/br/httpdocs"
+	SEARCH  5:"\\sata1\\home\\users\\koyot\\www\\moto.koyot.info" => "\/home\/httpd\/vhosts\/onesait.ru\/subdomains\/br\/httpdocs"
+	SEARCH  6:"%5Csata1%5Chome%5Cusers%5Ckoyot%5Cwww%5Cmoto.koyot.info" => "%2Fhome%2Fhttpd%2Fvhosts%2Fonesait.ru%2Fsubdomains%2Fbr%2Fhttpdocs"
+	SEARCH  7:"//moto.koyot.info" ===============================> "//br.onesait.ru"
+	SEARCH  8:"\/\/moto.koyot.info" =============================> "\/\/br.onesait.ru"
+	SEARCH  9:"%2F%2Fmoto.koyot.info" ===========================> "%2F%2Fbr.onesait.ru"
+	SEARCH 10:"http://br.onesait.ru" ============================> "https://br.onesait.ru"
+	SEARCH 11:"http:\/\/br.onesait.ru" ==========================> "https:\/\/br.onesait.ru"
+	SEARCH 12:"http%3A%2F%2Fbr.onesait.ru" ======================> "https%3A%2F%2Fbr.onesait.ru"
+
+EVALUATE TABLE: "wp_term_taxonomy"________________________________[ROWS:    16][PG:   1][SCAN:text columns]
+	SEARCH  1:"/sata1/home/users/koyot/www/moto.koyot.info/" ====> "/home/httpd/vhosts/onesait.ru/subdomains/br/httpdocs/"
+	SEARCH  2:"\/sata1\/home\/users\/koyot\/www\/moto.koyot.info\/" => "\/home\/httpd\/vhosts\/onesait.ru\/subdomains\/br\/httpdocs\/"
+	SEARCH  3:"%2Fsata1%2Fhome%2Fusers%2Fkoyot%2Fwww%2Fmoto.koyot.info%2F" => "%2Fhome%2Fhttpd%2Fvhosts%2Fonesait.ru%2Fsubdomains%2Fbr%2Fhttpdocs%2F"
+	SEARCH  4:"\sata1\home\users\koyot\www\moto.koyot.info" =====> "/home/httpd/vhosts/onesait.ru/subdomains/br/httpdocs"
+	SEARCH  5:"\\sata1\\home\\users\\koyot\\www\\moto.koyot.info" => "\/home\/httpd\/vhosts\/onesait.ru\/subdomains\/br\/httpdocs"
+	SEARCH  6:"%5Csata1%5Chome%5Cusers%5Ckoyot%5Cwww%5Cmoto.koyot.info" => "%2Fhome%2Fhttpd%2Fvhosts%2Fonesait.ru%2Fsubdomains%2Fbr%2Fhttpdocs"
+	SEARCH  7:"//moto.koyot.info" ===============================> "//br.onesait.ru"
+	SEARCH  8:"\/\/moto.koyot.info" =============================> "\/\/br.onesait.ru"
+	SEARCH  9:"%2F%2Fmoto.koyot.info" ===========================> "%2F%2Fbr.onesait.ru"
+	SEARCH 10:"http://br.onesait.ru" ============================> "https://br.onesait.ru"
+	SEARCH 11:"http:\/\/br.onesait.ru" ==========================> "https:\/\/br.onesait.ru"
+	SEARCH 12:"http%3A%2F%2Fbr.onesait.ru" ======================> "https%3A%2F%2Fbr.onesait.ru"
+
+EVALUATE TABLE: "wp_termmeta"_____________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_terms"________________________________________[ROWS:    16][PG:   1][SCAN:text columns]
+	SEARCH  1:"/sata1/home/users/koyot/www/moto.koyot.info/" ====> "/home/httpd/vhosts/onesait.ru/subdomains/br/httpdocs/"
+	SEARCH  2:"\/sata1\/home\/users\/koyot\/www\/moto.koyot.info\/" => "\/home\/httpd\/vhosts\/onesait.ru\/subdomains\/br\/httpdocs\/"
+	SEARCH  3:"%2Fsata1%2Fhome%2Fusers%2Fkoyot%2Fwww%2Fmoto.koyot.info%2F" => "%2Fhome%2Fhttpd%2Fvhosts%2Fonesait.ru%2Fsubdomains%2Fbr%2Fhttpdocs%2F"
+	SEARCH  4:"\sata1\home\users\koyot\www\moto.koyot.info" =====> "/home/httpd/vhosts/onesait.ru/subdomains/br/httpdocs"
+	SEARCH  5:"\\sata1\\home\\users\\koyot\\www\\moto.koyot.info" => "\/home\/httpd\/vhosts\/onesait.ru\/subdomains\/br\/httpdocs"
+	SEARCH  6:"%5Csata1%5Chome%5Cusers%5Ckoyot%5Cwww%5Cmoto.koyot.info" => "%2Fhome%2Fhttpd%2Fvhosts%2Fonesait.ru%2Fsubdomains%2Fbr%2Fhttpdocs"
+	SEARCH  7:"//moto.koyot.info" ===============================> "//br.onesait.ru"
+	SEARCH  8:"\/\/moto.koyot.info" =============================> "\/\/br.onesait.ru"
+	SEARCH  9:"%2F%2Fmoto.koyot.info" ===========================> "%2F%2Fbr.onesait.ru"
+	SEARCH 10:"http://br.onesait.ru" ============================> "https://br.onesait.ru"
+	SEARCH 11:"http:\/\/br.onesait.ru" ==========================> "https:\/\/br.onesait.ru"
+	SEARCH 12:"http%3A%2F%2Fbr.onesait.ru" ======================> "https%3A%2F%2Fbr.onesait.ru"
+
+EVALUATE TABLE: "wp_usermeta"_____________________________________[ROWS:    21][PG:   1][SCAN:text columns]
+	SEARCH  1:"/sata1/home/users/koyot/www/moto.koyot.info/" ====> "/home/httpd/vhosts/onesait.ru/subdomains/br/httpdocs/"
+	SEARCH  2:"\/sata1\/home\/users\/koyot\/www\/moto.koyot.info\/" => "\/home\/httpd\/vhosts\/onesait.ru\/subdomains\/br\/httpdocs\/"
+	SEARCH  3:"%2Fsata1%2Fhome%2Fusers%2Fkoyot%2Fwww%2Fmoto.koyot.info%2F" => "%2Fhome%2Fhttpd%2Fvhosts%2Fonesait.ru%2Fsubdomains%2Fbr%2Fhttpdocs%2F"
+	SEARCH  4:"\sata1\home\users\koyot\www\moto.koyot.info" =====> "/home/httpd/vhosts/onesait.ru/subdomains/br/httpdocs"
+	SEARCH  5:"\\sata1\\home\\users\\koyot\\www\\moto.koyot.info" => "\/home\/httpd\/vhosts\/onesait.ru\/subdomains\/br\/httpdocs"
+	SEARCH  6:"%5Csata1%5Chome%5Cusers%5Ckoyot%5Cwww%5Cmoto.koyot.info" => "%2Fhome%2Fhttpd%2Fvhosts%2Fonesait.ru%2Fsubdomains%2Fbr%2Fhttpdocs"
+	SEARCH  7:"//moto.koyot.info" ===============================> "//br.onesait.ru"
+	SEARCH  8:"\/\/moto.koyot.info" =============================> "\/\/br.onesait.ru"
+	SEARCH  9:"%2F%2Fmoto.koyot.info" ===========================> "%2F%2Fbr.onesait.ru"
+	SEARCH 10:"http://br.onesait.ru" ============================> "https://br.onesait.ru"
+	SEARCH 11:"http:\/\/br.onesait.ru" ==========================> "https:\/\/br.onesait.ru"
+	SEARCH 12:"http%3A%2F%2Fbr.onesait.ru" ======================> "https%3A%2F%2Fbr.onesait.ru"
+
+EVALUATE TABLE: "wp_users"________________________________________[ROWS:     1][PG:   1][SCAN:text columns]
+	SEARCH  1:"/sata1/home/users/koyot/www/moto.koyot.info/" ====> "/home/httpd/vhosts/onesait.ru/subdomains/br/httpdocs/"
+	SEARCH  2:"\/sata1\/home\/users\/koyot\/www\/moto.koyot.info\/" => "\/home\/httpd\/vhosts\/onesait.ru\/subdomains\/br\/httpdocs\/"
+	SEARCH  3:"%2Fsata1%2Fhome%2Fusers%2Fkoyot%2Fwww%2Fmoto.koyot.info%2F" => "%2Fhome%2Fhttpd%2Fvhosts%2Fonesait.ru%2Fsubdomains%2Fbr%2Fhttpdocs%2F"
+	SEARCH  4:"\sata1\home\users\koyot\www\moto.koyot.info" =====> "/home/httpd/vhosts/onesait.ru/subdomains/br/httpdocs"
+	SEARCH  5:"\\sata1\\home\\users\\koyot\\www\\moto.koyot.info" => "\/home\/httpd\/vhosts\/onesait.ru\/subdomains\/br\/httpdocs"
+	SEARCH  6:"%5Csata1%5Chome%5Cusers%5Ckoyot%5Cwww%5Cmoto.koyot.info" => "%2Fhome%2Fhttpd%2Fvhosts%2Fonesait.ru%2Fsubdomains%2Fbr%2Fhttpdocs"
+	SEARCH  7:"//moto.koyot.info" ===============================> "//br.onesait.ru"
+	SEARCH  8:"\/\/moto.koyot.info" =============================> "\/\/br.onesait.ru"
+	SEARCH  9:"%2F%2Fmoto.koyot.info" ===========================> "%2F%2Fbr.onesait.ru"
+	SEARCH 10:"http://br.onesait.ru" ============================> "https://br.onesait.ru"
+	SEARCH 11:"http:\/\/br.onesait.ru" ==========================> "https:\/\/br.onesait.ru"
+	SEARCH 12:"http%3A%2F%2Fbr.onesait.ru" ======================> "https%3A%2F%2Fbr.onesait.ru"
+
+EVALUATE TABLE: "wp_wc_admin_note_actions"________________________[ROWS:     2][PG:   1][SCAN:text columns]
+	SEARCH  1:"/sata1/home/users/koyot/www/moto.koyot.info/" ====> "/home/httpd/vhosts/onesait.ru/subdomains/br/httpdocs/"
+	SEARCH  2:"\/sata1\/home\/users\/koyot\/www\/moto.koyot.info\/" => "\/home\/httpd\/vhosts\/onesait.ru\/subdomains\/br\/httpdocs\/"
+	SEARCH  3:"%2Fsata1%2Fhome%2Fusers%2Fkoyot%2Fwww%2Fmoto.koyot.info%2F" => "%2Fhome%2Fhttpd%2Fvhosts%2Fonesait.ru%2Fsubdomains%2Fbr%2Fhttpdocs%2F"
+	SEARCH  4:"\sata1\home\users\koyot\www\moto.koyot.info" =====> "/home/httpd/vhosts/onesait.ru/subdomains/br/httpdocs"
+	SEARCH  5:"\\sata1\\home\\users\\koyot\\www\\moto.koyot.info" => "\/home\/httpd\/vhosts\/onesait.ru\/subdomains\/br\/httpdocs"
+	SEARCH  6:"%5Csata1%5Chome%5Cusers%5Ckoyot%5Cwww%5Cmoto.koyot.info" => "%2Fhome%2Fhttpd%2Fvhosts%2Fonesait.ru%2Fsubdomains%2Fbr%2Fhttpdocs"
+	SEARCH  7:"//moto.koyot.info" ===============================> "//br.onesait.ru"
+	SEARCH  8:"\/\/moto.koyot.info" =============================> "\/\/br.onesait.ru"
+	SEARCH  9:"%2F%2Fmoto.koyot.info" ===========================> "%2F%2Fbr.onesait.ru"
+	SEARCH 10:"http://br.onesait.ru" ============================> "https://br.onesait.ru"
+	SEARCH 11:"http:\/\/br.onesait.ru" ==========================> "https:\/\/br.onesait.ru"
+	SEARCH 12:"http%3A%2F%2Fbr.onesait.ru" ======================> "https%3A%2F%2Fbr.onesait.ru"
+
+EVALUATE TABLE: "wp_wc_admin_notes"_______________________________[ROWS:     2][PG:   1][SCAN:text columns]
+	SEARCH  1:"/sata1/home/users/koyot/www/moto.koyot.info/" ====> "/home/httpd/vhosts/onesait.ru/subdomains/br/httpdocs/"
+	SEARCH  2:"\/sata1\/home\/users\/koyot\/www\/moto.koyot.info\/" => "\/home\/httpd\/vhosts\/onesait.ru\/subdomains\/br\/httpdocs\/"
+	SEARCH  3:"%2Fsata1%2Fhome%2Fusers%2Fkoyot%2Fwww%2Fmoto.koyot.info%2F" => "%2Fhome%2Fhttpd%2Fvhosts%2Fonesait.ru%2Fsubdomains%2Fbr%2Fhttpdocs%2F"
+	SEARCH  4:"\sata1\home\users\koyot\www\moto.koyot.info" =====> "/home/httpd/vhosts/onesait.ru/subdomains/br/httpdocs"
+	SEARCH  5:"\\sata1\\home\\users\\koyot\\www\\moto.koyot.info" => "\/home\/httpd\/vhosts\/onesait.ru\/subdomains\/br\/httpdocs"
+	SEARCH  6:"%5Csata1%5Chome%5Cusers%5Ckoyot%5Cwww%5Cmoto.koyot.info" => "%2Fhome%2Fhttpd%2Fvhosts%2Fonesait.ru%2Fsubdomains%2Fbr%2Fhttpdocs"
+	SEARCH  7:"//moto.koyot.info" ===============================> "//br.onesait.ru"
+	SEARCH  8:"\/\/moto.koyot.info" =============================> "\/\/br.onesait.ru"
+	SEARCH  9:"%2F%2Fmoto.koyot.info" ===========================> "%2F%2Fbr.onesait.ru"
+	SEARCH 10:"http://br.onesait.ru" ============================> "https://br.onesait.ru"
+	SEARCH 11:"http:\/\/br.onesait.ru" ==========================> "https:\/\/br.onesait.ru"
+	SEARCH 12:"http%3A%2F%2Fbr.onesait.ru" ======================> "https%3A%2F%2Fbr.onesait.ru"
+
+EVALUATE TABLE: "wp_wc_customer_lookup"___________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_wc_download_log"______________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_wc_order_coupon_lookup"_______________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_wc_order_product_lookup"______________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_wc_order_stats"_______________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_wc_order_tax_lookup"__________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_wc_product_meta_lookup"_______________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_wc_tax_rate_classes"__________________________[ROWS:     2][PG:   1][SCAN:text columns]
+	SEARCH  1:"/sata1/home/users/koyot/www/moto.koyot.info/" ====> "/home/httpd/vhosts/onesait.ru/subdomains/br/httpdocs/"
+	SEARCH  2:"\/sata1\/home\/users\/koyot\/www\/moto.koyot.info\/" => "\/home\/httpd\/vhosts\/onesait.ru\/subdomains\/br\/httpdocs\/"
+	SEARCH  3:"%2Fsata1%2Fhome%2Fusers%2Fkoyot%2Fwww%2Fmoto.koyot.info%2F" => "%2Fhome%2Fhttpd%2Fvhosts%2Fonesait.ru%2Fsubdomains%2Fbr%2Fhttpdocs%2F"
+	SEARCH  4:"\sata1\home\users\koyot\www\moto.koyot.info" =====> "/home/httpd/vhosts/onesait.ru/subdomains/br/httpdocs"
+	SEARCH  5:"\\sata1\\home\\users\\koyot\\www\\moto.koyot.info" => "\/home\/httpd\/vhosts\/onesait.ru\/subdomains\/br\/httpdocs"
+	SEARCH  6:"%5Csata1%5Chome%5Cusers%5Ckoyot%5Cwww%5Cmoto.koyot.info" => "%2Fhome%2Fhttpd%2Fvhosts%2Fonesait.ru%2Fsubdomains%2Fbr%2Fhttpdocs"
+	SEARCH  7:"//moto.koyot.info" ===============================> "//br.onesait.ru"
+	SEARCH  8:"\/\/moto.koyot.info" =============================> "\/\/br.onesait.ru"
+	SEARCH  9:"%2F%2Fmoto.koyot.info" ===========================> "%2F%2Fbr.onesait.ru"
+	SEARCH 10:"http://br.onesait.ru" ============================> "https://br.onesait.ru"
+	SEARCH 11:"http:\/\/br.onesait.ru" ==========================> "https:\/\/br.onesait.ru"
+	SEARCH 12:"http%3A%2F%2Fbr.onesait.ru" ======================> "https%3A%2F%2Fbr.onesait.ru"
+
+EVALUATE TABLE: "wp_wc_webhooks"__________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_woocommerce_api_keys"_________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_woocommerce_attribute_taxonomies"_____________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_woocommerce_downloadable_product_permissions"_[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_woocommerce_log"______________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_woocommerce_order_itemmeta"___________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_woocommerce_order_items"______________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_woocommerce_payment_tokenmeta"________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_woocommerce_payment_tokens"___________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_woocommerce_sessions"_________________________[ROWS:     1][PG:   1][SCAN:text columns]
+	SEARCH  1:"/sata1/home/users/koyot/www/moto.koyot.info/" ====> "/home/httpd/vhosts/onesait.ru/subdomains/br/httpdocs/"
+	SEARCH  2:"\/sata1\/home\/users\/koyot\/www\/moto.koyot.info\/" => "\/home\/httpd\/vhosts\/onesait.ru\/subdomains\/br\/httpdocs\/"
+	SEARCH  3:"%2Fsata1%2Fhome%2Fusers%2Fkoyot%2Fwww%2Fmoto.koyot.info%2F" => "%2Fhome%2Fhttpd%2Fvhosts%2Fonesait.ru%2Fsubdomains%2Fbr%2Fhttpdocs%2F"
+	SEARCH  4:"\sata1\home\users\koyot\www\moto.koyot.info" =====> "/home/httpd/vhosts/onesait.ru/subdomains/br/httpdocs"
+	SEARCH  5:"\\sata1\\home\\users\\koyot\\www\\moto.koyot.info" => "\/home\/httpd\/vhosts\/onesait.ru\/subdomains\/br\/httpdocs"
+	SEARCH  6:"%5Csata1%5Chome%5Cusers%5Ckoyot%5Cwww%5Cmoto.koyot.info" => "%2Fhome%2Fhttpd%2Fvhosts%2Fonesait.ru%2Fsubdomains%2Fbr%2Fhttpdocs"
+	SEARCH  7:"//moto.koyot.info" ===============================> "//br.onesait.ru"
+	SEARCH  8:"\/\/moto.koyot.info" =============================> "\/\/br.onesait.ru"
+	SEARCH  9:"%2F%2Fmoto.koyot.info" ===========================> "%2F%2Fbr.onesait.ru"
+	SEARCH 10:"http://br.onesait.ru" ============================> "https://br.onesait.ru"
+	SEARCH 11:"http:\/\/br.onesait.ru" ==========================> "https:\/\/br.onesait.ru"
+	SEARCH 12:"http%3A%2F%2Fbr.onesait.ru" ======================> "https%3A%2F%2Fbr.onesait.ru"
+
+EVALUATE TABLE: "wp_woocommerce_shipping_zone_locations"__________[ROWS:     1][PG:   1][SCAN:text columns]
+	SEARCH  1:"/sata1/home/users/koyot/www/moto.koyot.info/" ====> "/home/httpd/vhosts/onesait.ru/subdomains/br/httpdocs/"
+	SEARCH  2:"\/sata1\/home\/users\/koyot\/www\/moto.koyot.info\/" => "\/home\/httpd\/vhosts\/onesait.ru\/subdomains\/br\/httpdocs\/"
+	SEARCH  3:"%2Fsata1%2Fhome%2Fusers%2Fkoyot%2Fwww%2Fmoto.koyot.info%2F" => "%2Fhome%2Fhttpd%2Fvhosts%2Fonesait.ru%2Fsubdomains%2Fbr%2Fhttpdocs%2F"
+	SEARCH  4:"\sata1\home\users\koyot\www\moto.koyot.info" =====> "/home/httpd/vhosts/onesait.ru/subdomains/br/httpdocs"
+	SEARCH  5:"\\sata1\\home\\users\\koyot\\www\\moto.koyot.info" => "\/home\/httpd\/vhosts\/onesait.ru\/subdomains\/br\/httpdocs"
+	SEARCH  6:"%5Csata1%5Chome%5Cusers%5Ckoyot%5Cwww%5Cmoto.koyot.info" => "%2Fhome%2Fhttpd%2Fvhosts%2Fonesait.ru%2Fsubdomains%2Fbr%2Fhttpdocs"
+	SEARCH  7:"//moto.koyot.info" ===============================> "//br.onesait.ru"
+	SEARCH  8:"\/\/moto.koyot.info" =============================> "\/\/br.onesait.ru"
+	SEARCH  9:"%2F%2Fmoto.koyot.info" ===========================> "%2F%2Fbr.onesait.ru"
+	SEARCH 10:"http://br.onesait.ru" ============================> "https://br.onesait.ru"
+	SEARCH 11:"http:\/\/br.onesait.ru" ==========================> "https:\/\/br.onesait.ru"
+	SEARCH 12:"http%3A%2F%2Fbr.onesait.ru" ======================> "https%3A%2F%2Fbr.onesait.ru"
+
+EVALUATE TABLE: "wp_woocommerce_shipping_zone_methods"____________[ROWS:     2][PG:   1][SCAN:text columns]
+	SEARCH  1:"/sata1/home/users/koyot/www/moto.koyot.info/" ====> "/home/httpd/vhosts/onesait.ru/subdomains/br/httpdocs/"
+	SEARCH  2:"\/sata1\/home\/users\/koyot\/www\/moto.koyot.info\/" => "\/home\/httpd\/vhosts\/onesait.ru\/subdomains\/br\/httpdocs\/"
+	SEARCH  3:"%2Fsata1%2Fhome%2Fusers%2Fkoyot%2Fwww%2Fmoto.koyot.info%2F" => "%2Fhome%2Fhttpd%2Fvhosts%2Fonesait.ru%2Fsubdomains%2Fbr%2Fhttpdocs%2F"
+	SEARCH  4:"\sata1\home\users\koyot\www\moto.koyot.info" =====> "/home/httpd/vhosts/onesait.ru/subdomains/br/httpdocs"
+	SEARCH  5:"\\sata1\\home\\users\\koyot\\www\\moto.koyot.info" => "\/home\/httpd\/vhosts\/onesait.ru\/subdomains\/br\/httpdocs"
+	SEARCH  6:"%5Csata1%5Chome%5Cusers%5Ckoyot%5Cwww%5Cmoto.koyot.info" => "%2Fhome%2Fhttpd%2Fvhosts%2Fonesait.ru%2Fsubdomains%2Fbr%2Fhttpdocs"
+	SEARCH  7:"//moto.koyot.info" ===============================> "//br.onesait.ru"
+	SEARCH  8:"\/\/moto.koyot.info" =============================> "\/\/br.onesait.ru"
+	SEARCH  9:"%2F%2Fmoto.koyot.info" ===========================> "%2F%2Fbr.onesait.ru"
+	SEARCH 10:"http://br.onesait.ru" ============================> "https://br.onesait.ru"
+	SEARCH 11:"http:\/\/br.onesait.ru" ==========================> "https:\/\/br.onesait.ru"
+	SEARCH 12:"http%3A%2F%2Fbr.onesait.ru" ======================> "https%3A%2F%2Fbr.onesait.ru"
+
+EVALUATE TABLE: "wp_woocommerce_shipping_zones"___________________[ROWS:     1][PG:   1][SCAN:text columns]
+	SEARCH  1:"/sata1/home/users/koyot/www/moto.koyot.info/" ====> "/home/httpd/vhosts/onesait.ru/subdomains/br/httpdocs/"
+	SEARCH  2:"\/sata1\/home\/users\/koyot\/www\/moto.koyot.info\/" => "\/home\/httpd\/vhosts\/onesait.ru\/subdomains\/br\/httpdocs\/"
+	SEARCH  3:"%2Fsata1%2Fhome%2Fusers%2Fkoyot%2Fwww%2Fmoto.koyot.info%2F" => "%2Fhome%2Fhttpd%2Fvhosts%2Fonesait.ru%2Fsubdomains%2Fbr%2Fhttpdocs%2F"
+	SEARCH  4:"\sata1\home\users\koyot\www\moto.koyot.info" =====> "/home/httpd/vhosts/onesait.ru/subdomains/br/httpdocs"
+	SEARCH  5:"\\sata1\\home\\users\\koyot\\www\\moto.koyot.info" => "\/home\/httpd\/vhosts\/onesait.ru\/subdomains\/br\/httpdocs"
+	SEARCH  6:"%5Csata1%5Chome%5Cusers%5Ckoyot%5Cwww%5Cmoto.koyot.info" => "%2Fhome%2Fhttpd%2Fvhosts%2Fonesait.ru%2Fsubdomains%2Fbr%2Fhttpdocs"
+	SEARCH  7:"//moto.koyot.info" ===============================> "//br.onesait.ru"
+	SEARCH  8:"\/\/moto.koyot.info" =============================> "\/\/br.onesait.ru"
+	SEARCH  9:"%2F%2Fmoto.koyot.info" ===========================> "%2F%2Fbr.onesait.ru"
+	SEARCH 10:"http://br.onesait.ru" ============================> "https://br.onesait.ru"
+	SEARCH 11:"http:\/\/br.onesait.ru" ==========================> "https:\/\/br.onesait.ru"
+	SEARCH 12:"http%3A%2F%2Fbr.onesait.ru" ======================> "https%3A%2F%2Fbr.onesait.ru"
+
+EVALUATE TABLE: "wp_woocommerce_tax_rate_locations"_______________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_woocommerce_tax_rates"________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_wpfm_backup"__________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+--------------------------------------
+SCANNED:	Tables:55 	|	 Rows:454 	|	 Cells:2213 
+UPDATED:	Tables:5 	|	 Rows:22 	|	 Cells:25 
+ERRORS:		2 
+RUNTIME:	0.175300 sec
+--------------------------------------
+DATA-REPLACE ERRORS (Serialization):
+ENGINE: serialize data serial check error
+	DATA: a:8:{s:7:"subject";s:28:"Power Sport "[your-subject]"";s:6:"sender";s:39:"Power Sport <wordpress@moto.koyot.info>";s:4:"body";s:196:"От: [your-name] <[your-email]>
+Тема: [your-subject]
+
+Сообщени [...]
+	TABLE:wp_postmeta COLUMN: meta_value WHERE: `meta_id` = "4"
+ENGINE: serialize data serial check error
+	DATA: a:9:{s:6:"active";b:0;s:7:"subject";s:28:"Power Sport "[your-subject]"";s:6:"sender";s:39:"Power Sport <wordpress@moto.koyot.info>";s:4:"body";s:137:"Сообщение:
+[your-message]
+
+-- 
+Это сообщение [...]
+	TABLE:wp_postmeta COLUMN: meta_value WHERE: `meta_id` = "5"
+
+
+====================================
+REMOVE LICENSE KEY
+====================================
+
+====================================
+CREATE NEW ADMIN USER
+====================================
+
+====================================
+CONFIGURATION FILE UPDATES
+====================================
+	UPDATE DB_NAME ""a52308_br""
+	UPDATE DB_USER ""a52308_br""
+	UPDATE DB_PASSWORD "** OBSCURED **"
+	UPDATE DB_HOST ""a52308.mysql.mchost.ru""
+	REMOVE WPCACHEHOME
+	
+*** UPDATED WP CONFIG FILE ***
+
+====================================
+HTACCESS UPDATE MODE: "NEW"
+====================================
+- PASS: Successfully created a new .htaccess file.
+- PASS: Existing Apache 'htaccess.orig' was removed
+
+====================================
+GENERAL UPDATES & CLEANUP
+====================================
+
+====================================
+DEACTIVATE PLUGINS CHECK
+====================================
+Activated plugins (If they are activated) listed here will be deactivated: Array
+(
+    [0] => simple-google-recaptcha/simple-google-recaptcha.php
+    [1] => js_composer/js_composer.php
+)
+
+
+====================================
+NOTICES TEST
+====================================
+No General Notices Found
+
+
+====================================
+CLEANUP TMP FILES
+====================================
+
+====================================
+FINAL REPORT NOTICES
+====================================
+
+STEP-3 COMPLETE @ 11:15:52 - RUNTIME: 0.2036 sec. 
+
+
+====================================
+FINAL REPORT NOTICES LIST
+====================================
+-----------------------
+[WARNING] SERIALIZATION NOTICES  (2)
+	SECTIONS: search_replace
+	LONG MSG:             Notices should be ignored unless issues are found after you have tested an installed site.  The SQL below will show data that may have not been
+            updated during the serialization process.  Best practices for serialization notices is to just re-save the plugin/post/page in question.
+
+-----------------------
+[INFO] No general notices
+	SECTIONS: general
+
+-----------------------
+[INFO] No errors in database
+	SECTIONS: database
+
+-----------------------
+[INFO] No files extraction errors
+	SECTIONS: files
+
+-----------------------
+[WARNING] DATA-REPLACE ERROR: Serialization
+	SECTIONS: search_replace
+	LONG MSG: ENGINE: serialize data serial check error
+	DATA: a:8:{s:7:"subject";s:28:"Power Sport "[your-subject]"";s:6:"sender";s:39:"Power Sport <wordpress@moto.koyot.info>";s:4:"body";s:196:"От: [your-name] <[your-email]>
+Тема: [your-subject]
+
+Сообщени [...]
+	TABLE:wp_postmeta COLUMN: meta_value WHERE: `meta_id` = "4"
+
+-----------------------
+[WARNING] DATA-REPLACE ERROR: Serialization
+	SECTIONS: search_replace
+	LONG MSG: ENGINE: serialize data serial check error
+	DATA: a:9:{s:6:"active";b:0;s:7:"subject";s:28:"Power Sport "[your-subject]"";s:6:"sender";s:39:"Power Sport <wordpress@moto.koyot.info>";s:4:"body";s:137:"Сообщение:
+[your-message]
+
+-- 
+Это сообщение [...]
+	TABLE:wp_postmeta COLUMN: meta_value WHERE: `meta_id` = "5"
+
+====================================

@@ -1,0 +1,28 @@
+{
+    "remotePath": "./wp-content/themes/beauty-republic",
+    "host": "a52308.ftp.mchost.ru",
+    "username": "a52308_br",
+    "password": "1r4NkVqGVd",
+    "port": "",
+    "secure": false,
+    "protocol": "tls",
+    "uploadOnSave": false,
+    "passive": false,
+    "debug": false,
+    "privateKeyPath": null,
+    "passphrase": null,
+    "agent": null,
+    "allow": [],
+    "ignore": [
+        "\\.vscode",
+        "\\.git",
+        "\\.DS_Store",
+        "\\node_modules"
+    ],
+    "generatedFiles": {
+        "extensionsToInclude": [
+            ""
+        ],
+        "path": ""
+    }
+}

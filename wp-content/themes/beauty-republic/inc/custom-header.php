@@ -20,7 +20,7 @@ function beauty_republic_custom_header_setup() {
 	add_theme_support( 'custom-header', apply_filters( 'beauty_republic_custom_header_args', array(
 		'default-image'          => '',
 		'default-text-color'     => '000000',
-		'width'                  => 1000,
+		'width'                  => 250,
 		'height'                 => 250,
 		'flex-height'            => true,
 		'wp-head-callback'       => 'beauty_republic_header_style',

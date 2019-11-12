@@ -1085,21 +1085,21 @@ function get_header_image_tag( $attr = array() ) {
 		return '';
 	}
 
-	/*$width  = absint( $header->width );
-	$height = absint( $header->height );*/
+	$width  = absint( $header->width );
+	$height = absint( $header->height );
 
 	$attr = wp_parse_args(
 		$attr,
 		array(
 			'src'    => $header->url,
-			/*'width'  => $width,
-			'height' => $height,*/
+			'width'  => $width,
+			'height' => $height,
 			'alt'    => get_bloginfo( 'name' ),
 		)
 	);
 
 	// Generate 'srcset' and 'sizes' if not already present.
-	/*if ( empty( $attr['srcset'] ) && ! empty( $header->attachment_id ) ) {
+	if ( empty( $attr['srcset'] ) && ! empty( $header->attachment_id ) ) {
 		$image_meta = get_post_meta( $header->attachment_id, '_wp_attachment_metadata', true );
 		$size_array = array( $width, $height );
 
@@ -1112,7 +1112,7 @@ function get_header_image_tag( $attr = array() ) {
 				$attr['sizes']  = $sizes;
 			}
 		}
-	}*/
+	}
 
 	$attr = array_map( 'esc_attr', $attr );
 	$html = '<img';

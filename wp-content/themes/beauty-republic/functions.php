@@ -46,32 +46,7 @@ if ( ! function_exists( 'beauty_republic_setup' ) ) :
 		register_nav_menus( array(
 			'menu-1' => esc_html__( 'Primary', 'beauty-republic' ),
 		) );
-		add_filter('nav_menu_css_class', 'my_css_attributes_filter');
-		add_filter('nav_menu_item_id', 'my_css_attributes_filter');
-		add_filter('page_css_class', 'my_css_attributes_filter');
-		function my_css_attributes_filter($var) {
-		$allow = array('nav__item');
-		return is_array($var) ? array_intersect($var, $allow) : '';
-		}
-		function atg_menu_classes($classes, $item, $args) {
-			if($args->theme_location == 'primary-menu') {
-				$classes[] = 'nav__item-link';
-			}
-				return $classes;
-			}
-		add_filter('nav_menu_css_class', 'atg_menu_classes', 1, 3);
 
-		function add_menuclass($ulclass) {
-			return preg_replace('/<a /', '<a class="nav__item-link"', $ulclass);
-			}
-		add_filter('wp_nav_menu','add_menuclass');
-
-		add_filter('nav_menu_css_class' , 'special_nav_class' , 10 , 2);
-
-		function special_nav_class($classes, $item){
-    	$classes[] = 'nav__item';
-    	return $classes;
-		}
 		/*
 		 * Switch default core markup for search form, comment form, and comments
 		 * to output valid HTML5.
@@ -82,7 +57,13 @@ if ( ! function_exists( 'beauty_republic_setup' ) ) :
 			'comment-list',
 			'gallery',
 			'caption',
-		) );		
+		) );
+
+		// Set up the WordPress core custom background feature.
+		add_theme_support( 'custom-background', apply_filters( 'beauty_republic_custom_background_args', array(
+			'default-color' => 'ffffff',
+			'default-image' => '',
+		) ) );
 
 		// Add theme support for selective refresh for widgets.
 		add_theme_support( 'customize-selective-refresh-widgets' );
@@ -92,6 +73,12 @@ if ( ! function_exists( 'beauty_republic_setup' ) ) :
 		 *
 		 * @link https://codex.wordpress.org/Theme_Logo
 		 */
+		add_theme_support( 'custom-logo', array(
+			'height'      => 250,
+			'width'       => 250,
+			'flex-width'  => true,
+			'flex-height' => true,
+		) );
 	}
 endif;
 add_action( 'after_setup_theme', 'beauty_republic_setup' );
